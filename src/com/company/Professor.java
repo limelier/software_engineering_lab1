@@ -10,15 +10,7 @@ public class Professor extends Person {
         super(name, surname, email);
         Courses = new ArrayList<>();
     }
-    public Professor(String name, String surname, String email, List<Course> courses) {
-        super(name, surname, email);
-        Courses = new ArrayList<>();
-        Courses.addAll(courses);
-    }
     public void addCourse(Course course) {
         Courses.add(course);
-    }
-    public List<Course> getCourses() {
-        return Courses;
     }
 }

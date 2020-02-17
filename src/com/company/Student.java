@@ -10,11 +10,6 @@ public class Student extends Person {
         super(name, surname, email);
         Courses = new ArrayList<>();
     }
-    public Student(String name, String surname, String email, List<Course> courses) {
-        super(name, surname, email);
-        Courses = new ArrayList<>();
-        Courses.addAll(courses);
-    }
     public void enroll(Course course) {
         Courses.add(course);
     }
