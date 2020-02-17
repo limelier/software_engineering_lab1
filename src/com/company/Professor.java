@@ -18,4 +18,7 @@ public class Professor extends Person {
     public void addCourse(Course course) {
         Courses.add(course);
     }
+    public List<Course> getCourses() {
+        return Courses;
+    }
 }
